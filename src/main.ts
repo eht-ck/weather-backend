@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
   app.enableCors({
-    origin: 'https://weather-app-frontend-umber.vercel.app/', 
+    origin: 'https://weather-app-frontend-umber.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   });
 
